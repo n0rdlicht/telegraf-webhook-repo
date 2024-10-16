@@ -1,0 +1,13 @@
+name: Example Workflow
+
+on:
+  push:
+
+jobs:
+  example-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: Example Step
+        run: echo 'Hello World'
